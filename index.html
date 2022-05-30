@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+  <title>Todo App</title>
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700" rel="stylesheet">
+  <link rel="stylesheet" href="style.css"  media="screen" charset="utf-8">
+</head>
+
+<body>
+  <header class="head">
+    <img src="./eisenhower-matrix.jpg">
+    <a class="more-inf" href="https://goal-life.com/page/method/matrix-eisenhower">Want more details?</a>
+  </header>
+  <main class="сentering">
+    <section class="add-element">
+      <p id="add-elem">
+        <label for="new-task">Add Item</label>
+        <div class="task-row-wrapper">
+          <input id="new-task" class="task new-task" type="text">
+          <button>Add</button>
+        </div>
+      </p>
+    </section>
+    <section class="Todo">
+      <h3>Todo</h3>
+      <ul class="items" id="incomplete-tasks">
+        <li class="item">
+          <input class="item__checkbox" type="checkbox"><label class="task">Pay Bills</label>
+          <input class="item__text" type="text" class="task">
+          <button class="item__edit edit">Edit</button>
+          <button class="item__del del">
+            <img class="item__img" src="./remove.svg" alt="Delete svg img">
+          </button>
+        </li>
+        <li class="item edit-mode">
+          <input class="item__checkbox" type="checkbox">
+          <label class="item__text-edit task">Go Shopping</label>
+          <input type="item__text text" value="Go Shopping" class="task">
+          <button class="item__edit edit">Save</button>
+          <button class="item__del del">
+            <img class="item__img" src="./remove.svg" alt="Delete svg img">
+          </button>
+        </li>
+      </ul>
+    </section>
+    <section class="completed">
+      <h3>Completed</h3>
+      <ul class="completed-tasks items">
+        <li class="item">
+          <input class="item__checkbox" type="checkbox" checked>
+          <label class="item__text-edit task">See the Doctor</label>
+          <input class="item__text task" type="text">
+          <button class="item__edit edit">Edit</button>
+          <button class="item__del del">
+            <img class="item__img" src="./remove.svg" alt="Delete svg img">
+          </button>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>  
